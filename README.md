@@ -30,7 +30,7 @@ Masyarakat dari berbagai kalangan usia, terutama untuk anak-anak dan remaja yang
 
 ## Skema Database
 * Tabel
-![tabel]()
+![tabel](https://github.com/praktikum-tiunpad-2022/proyek-web-execution/blob/6d4cf1d95edbada65dc383c9db0f1131a6532176/IceCream2.png)
 
 * Entity Relationship Diagram 
 ![diagram](https://github.com/praktikum-tiunpad-2022/proyek-web-execution/blob/57893b267461cbcc9169ecb0e724c4b95779b58f/IceCream.png)
