@@ -29,7 +29,7 @@ Masyarakat dari berbagai kalangan usia, terutama untuk anak-anak dan remaja yang
 ## Mockup Dasar Sederhana
 
 ## Skema Database
-* Tabel
+* Tabel Relasi Database
 ![tabel](https://github.com/praktikum-tiunpad-2022/proyek-web-execution/blob/6d4cf1d95edbada65dc383c9db0f1131a6532176/IceCream2.png)
 
 * Entity Relationship Diagram 
