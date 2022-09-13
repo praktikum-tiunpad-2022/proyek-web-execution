@@ -1,6 +1,6 @@
 <p align="center">
   <h2 align="center">
-    Website Ice Cream Shop
+    Milk It - Ice Cream Shop
   </h2>
 </p>
 
