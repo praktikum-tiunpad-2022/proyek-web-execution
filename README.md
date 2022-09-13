@@ -16,16 +16,16 @@ Website penjualan Ice Cream secara online
 | 140810210008  | Nabila Sa'diyyah Ahmadi          |
 | 140810210048  | Akmal Megaputra                  |
 
-##Fungsi
+## Fungsi
 - Sebagai penyedia layanan berbelanja Ice Cream yang mudah, yakmi cukup dengan klik dari website
 - Sebagai penyedia layanan distribusi penjualan ice cream secara online
 
-##Tujuan
+## Tujuan
 - Mempermudah masyarakat dalam membeli ice cream dari mana saja dan kapan saja
 
-##Target Tujuan
+## Target Tujuan
 Masyarakat dari berbagai kalangan usia, terutama untuk anak-anak dan remaja yang menyukai Ice Cream
 
-##Mockup Dasar Sederhana
+## Mockup Dasar Sederhana
 
-##Skema Database
+## Skema Database
