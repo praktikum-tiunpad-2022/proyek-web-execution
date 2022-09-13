@@ -28,6 +28,8 @@ Masyarakat dari berbagai kalangan usia, terutama untuk anak-anak dan remaja yang
 
 ## Mockup Dasar Sederhana
 ![mockup1](https://github.com/praktikum-tiunpad-2022/proyek-web-execution/blob/03cec263108026955b5f765405e01c0a3184c045/1.png)
+![mockup2](https://github.com/praktikum-tiunpad-2022/proyek-web-execution/blob/d8ec6f3e972d62ea2bb2125b14cde8a00b99c4f9/2.png)
+
 ## Skema Database
 * Tabel Relasi Database
 ![tabel](https://github.com/praktikum-tiunpad-2022/proyek-web-execution/blob/6d4cf1d95edbada65dc383c9db0f1131a6532176/IceCream2.png)
