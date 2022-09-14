@@ -14,7 +14,6 @@ Website penjualan Ice Cream secara online
 | ------------- |----------------------------------|
 | 140810210006  | Glory Cornelia Patining Kurik    |
 | 140810210008  | Nabila Sa'diyyah Ahmadi          |
-| 140810210048  | Akmal Megaputra                  |
 
 ## Fungsi
 - Sebagai penyedia layanan berbelanja Ice Cream yang mudah, yakmi cukup dengan klik dari website
