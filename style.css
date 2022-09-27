@@ -1,12 +1,6 @@
-body {
-    margin: 20px;
-    background-color: aliceblue;
-}
-
 .container {
     width: 1200px;
     margin: auto;
-    background-color: white;
     padding: 20px 70px 20px 70px;
     border-radius: 25px;
 }
