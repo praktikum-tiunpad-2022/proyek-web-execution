@@ -1,0 +1,36 @@
+<?php
+
+namespace App\Models;
+
+use CodeIgniter\Model;
+
+class IceCreamModel extends Model
+{
+    protected $table            = 'icecream';
+    protected $primaryKey       = 'id_iceCream';
+    protected $protectFields    = true;
+    protected $allowedFields    = [
+        'id_iceCream','nama_iceCream','topping','tipe_harga'
+    ];
+
+    public function getIceCream($id_iceCream = false){
+        if($id === false) {
+            return $this->findAll();
+        }else {
+            return $this->where('id_iceCream',$id_iceCream)->first();
+        }
+    }
+
+    public function saveIdentitas($data) {
+        return $this->insert($data);
+    }
+
+    public function updateIceCream($id_iceCream, $data) {
+        return $this->update($id_iceCream, $data);
+    }
+
+    public function deleteIceCream($id_iceCream) {
+        return $this->delete($id_iceCream);
+    }
+}
+?>
