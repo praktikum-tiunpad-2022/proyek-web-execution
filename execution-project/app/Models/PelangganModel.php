@@ -13,7 +13,7 @@ class PelangganModel extends Model
         'nama_pelanggan','alamat','no_telp'
     ];
 
-    public function getIceCream($id_pelanggan = false){
+    public function getPelanggan($id_pelanggan = false){
         if($id === false) {
             return $this->findAll();
         }else {
@@ -21,15 +21,15 @@ class PelangganModel extends Model
         }
     }
 
-    public function saveIdentitas($data) {
+    public function savePelanggan($data) {
         return $this->insert($data);
     }
 
-    public function updateIceCream($id_pelanggan, $data) {
+    public function updatePelanggan($id_pelanggan, $data) {
         return $this->update($id_pelanggan, $data);
     }
 
-    public function deleteIceCream($id_pelanggan) {
+    public function deletePelanggan($id_pelanggan) {
         return $this->delete($id_pelanggan);
     }
 }

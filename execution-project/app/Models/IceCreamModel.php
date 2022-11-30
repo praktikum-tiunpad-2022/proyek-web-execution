@@ -14,10 +14,18 @@ class IceCreamModel extends Model
     ];
 
     public function getIceCream($id_iceCream = false){
-        if($id === false) {
+        if($id_iceCream === false) {
             return $this->findAll();
         }else {
             return $this->where('id_iceCream',$id_iceCream)->first();
+        }
+    }
+
+    public function getIceCreamID($nama_iceCream = false) {
+        if($nama_iceCream === false) {
+            return $this->findAll();
+        } else {
+            return $this->where('nama_iceCream', $nama_iceCream);
         }
     }
 
