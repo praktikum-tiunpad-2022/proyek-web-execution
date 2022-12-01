@@ -23,9 +23,9 @@ class IceCreamModel extends Model
 
     public function getIceCreamID($nama_iceCream = false) {
         if($nama_iceCream === false) {
-            return $this->findAll();
+            return 0;
         } else {
-            return $this->where('nama_iceCream', $nama_iceCream);
+            return $this->where('nama_iceCream', $nama_iceCream)->first();
         }
     }
 

@@ -5,7 +5,7 @@
     <div class="row">
         <div class="col">
             <h1>Order Form</h1>
-            <form action="/transaction" method="POST">
+            <form action="/home" method="POST">
                 <div class="form-group">
                     <label for="name">Nama Pelanggan</label>
                     <input type="nama_pelanggan" class="form-control" name="nama_pelanggan" id="nama_pelanggan" placeholder="Nama Pelanggan">
@@ -18,7 +18,7 @@
                 </div>
                 <div class="form-group">
                     <label for="iceCream_menu">Menu Ice Cream</label>
-                    <select multiple class="form-control" id="iceCream_menu">
+                    <select multiple class="form-control" id="iceCream_menu" name="iceCream_menu">
                     <option>Chocochips Ice Cream</option>
                     <option>Snow Oreo Ice Cream</option>
                     <option>Choco-Mocca Ice Cream</option>

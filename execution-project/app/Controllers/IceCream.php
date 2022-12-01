@@ -14,11 +14,6 @@ class IceCream extends BaseController
             'no_telp' => $this->request->getPost('no_telp'),
         ];
         $modelTransaction->savePelanggan($data);
-        return redirect()->to('/home');  
-    }
-
-    public function order()
-    {
-        return view('order');
+        return view('home');  
     }
 }
