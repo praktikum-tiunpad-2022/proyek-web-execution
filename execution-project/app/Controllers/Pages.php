@@ -14,8 +14,13 @@ class Pages extends BaseController
         return view('home');
     }
 
-    public function order()
+    public function orderPage()
     {
         return view('order');
+    }
+
+    public function productPage()
+    {
+        return view('product');
     }
 }

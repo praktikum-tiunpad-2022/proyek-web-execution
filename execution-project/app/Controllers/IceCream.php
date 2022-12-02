@@ -2,7 +2,7 @@
 
 namespace App\Controllers;
 use App\Models\PelangganModel;
-use App\Models\UserModel;
+use App\Models\IceCreamModel;
 
 class IceCream extends BaseController
 {
@@ -17,5 +17,15 @@ class IceCream extends BaseController
         $modelTransaction->savePelanggan($data);
         return view('home');  
     }
+
+    public function displayProduct()
+    {
+        $modelIceCream = new IceCreamModel();
+        $data = [
+            'iceCream' => $modelIceCream->getIceCream(),
+        ];
+        return view('product',$data);
+    }
+
 }
 

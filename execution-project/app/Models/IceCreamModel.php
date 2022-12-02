@@ -6,7 +6,7 @@ use CodeIgniter\Model;
 
 class IceCreamModel extends Model
 {
-    protected $table            = 'icecream';
+    protected $table            = 'iceCream';
     protected $primaryKey       = 'id_iceCream';
     protected $protectFields    = true;
     protected $allowedFields    = [

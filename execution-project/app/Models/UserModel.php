@@ -7,26 +7,20 @@ use CodeIgniter\Model;
 class UserModel extends Model
 {
     protected $table            = 'users';
-    protected $primaryKey       = 'username';
+    protected $primaryKey       = 'id';
     protected $protectFields    = true;
     protected $allowedFields    = [
-        'username, password, level'
+        'email','password'
     ];
 
-    public function getIceCream($id_iceCream = false){
-        if($id_iceCream === false) {
-            return $this->findAll();
-        }else {
-            return $this->where('id_iceCream',$id_iceCream)->first();
+    protected $allowCallbacks = true;
+    protected $beforeInsert   = ['hashPassword'];
+    protected $beforeUpdate   = ['hashPassword'];
+   
+    protected function hashPassword(array $data) {
+        if(isset($data['data']['password'])) {
+            $data['data']['password'] = password_hash($data['data']['password'], PASSWORD_DEFAULT);
         }
-    }
-
-    public function saveUser($data) {
-        return $this->insert($data);
-    }
-
-    public function deleteUser($username) {
-        return $this->delete($username);
+        return $data;
     }
 }
-?>

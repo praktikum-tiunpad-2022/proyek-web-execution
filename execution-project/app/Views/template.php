@@ -25,7 +25,7 @@
             <a class="nav-link" aria-current="page" href="/home">Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Popular</a>
+            <a class="nav-link" href="/product">Product</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="/order">Order</a>

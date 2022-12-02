@@ -22,7 +22,7 @@
       </div>
       <!-- Background image -->
 
-        <h1 style="text-align: center; margin: 20px;">Our Ice Cream Menu</h1>
+        <h1 style="text-align: center; margin: 20px;">Our Popular Ice Cream Menu</h1>
 
         <div class="gallery">
             <div class="card">
@@ -31,7 +31,7 @@
                   <div class="text-white">
                     <h5 class="card-title">Chocochips Ice Cream</h5>
                     <p class="card-text">Rasa : chocolate <br>Topping : kacang <br>Harga : 28.000</p>
-                    <a href="#" class="btn btn-light">Add to chart</a>
+                    <a href="/order" class="btn btn-light">Add to chart</a>
                   </div>
                 </div>
             </div>
@@ -42,7 +42,7 @@
                   <div class="text-white">
                     <h5 class="card-title">Snow Oreo Ice Cream</h5>
                     <p class="card-text">Rasa : vanilla <br>Topping : oreo <br>Harga : 17.000</p>
-                    <a href="#" class="btn btn-light">Add to chart</a>
+                    <a href="/order" class="btn btn-light">Add to chart</a>
                   </div>
                 </div>
             </div>
@@ -53,7 +53,7 @@
                   <div class="text-white">
                     <h5 class="card-title">Choco-Mocca Ice Cream</h5>
                     <p class="card-text">Rasa : mocca <br>Topping : cokelat <br>Harga : 21.000</p>
-                    <a href="#" class="btn btn-light">Add to chart</a>
+                    <a href="/order" class="btn btn-light">Add to chart</a>
                   </div>
                 </div>
             </div>
@@ -64,7 +64,7 @@
                   <div class="text-white">
                     <h5 class="card-title">Sweet Corn Ice Cream</h5>
                     <p class="card-text">Rasa : jagung <br>Topping : kacang <br>Harga : 25.000</p>
-                    <a href="#" class="btn btn-light">Add to chart</a>
+                    <a href="/order" class="btn btn-light">Add to chart</a>
                   </div>
                 </div>
             </div>
@@ -75,7 +75,7 @@
                   <div class="text-white">
                     <h5 class="card-title">Sweet Vanilla Ice Cream</h5>
                     <p class="card-text">Rasa : vanilla <br>Topping : kismis <br>Harga : 32.000</p>
-                    <a href="#" class="btn btn-light">Add to chart</a>
+                    <a href="/order" class="btn btn-light">Add to chart</a>
                   </div>
                 </div>
             </div>
@@ -86,7 +86,7 @@
                   <div class="text-white">
                     <h5 class="card-title">Biscuit Ice Cream</h5>
                     <p class="card-text">Rasa : vanilla <br>Topping : cokelat <br>Harga : 18.000</p>
-                    <a href="#" class="btn btn-light">Add to chart</a>
+                    <a href="/order" class="btn btn-light">Add to chart</a>
                   </div>
                 </div>
             </div>
@@ -97,7 +97,7 @@
                   <div class="text-white">
                     <h5 class="card-title">Wealth Chocolate Ice Cream</h5>
                     <p class="card-text">Rasa : chocolate <br>Topping : cokelat <br>Harga : 27.000</p>
-                    <a href="#" class="btn btn-light">Add to chart</a>
+                    <a href="/order" class="btn btn-light">Add to chart</a>
                   </div>
                 </div>
             </div>
@@ -108,7 +108,7 @@
                   <div class="text-white">
                     <h5 class="card-title">Sweet Cutton Ice Cream</h5>
                     <p class="card-text">Rasa : vanilla <br>Topping : susu <br>Harga : 15.000</p>
-                    <a href="#" class="btn btn-light">Add to chart</a>
+                    <a href="/order" class="btn btn-light">Add to chart</a>
                   </div>
                 </div>
             </div>

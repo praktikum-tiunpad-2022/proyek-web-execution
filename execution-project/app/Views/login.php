@@ -15,7 +15,7 @@
         <?php endif; ?>
         <h3>Have an account?</h3>
         <form action="/" method="post">
-            <input type="text" name="username" placeholder="username" required><br>
+            <input type="text" name="email" placeholder="email" required><br>
             <input type="text" name="password" placeholder="password" required><br>
             <?php if(isset($validation)) : ?>
                 <?= $validation->listErrors() ?>

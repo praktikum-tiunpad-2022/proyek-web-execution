@@ -39,7 +39,8 @@ $routes->get('/', 'Pages::loginPage');
 $routes->post('/', 'Auth::index');
 $routes->get('/home', 'Pages::homePage');
 $routes->post('/home', 'IceCream::createTransaction');
-$routes->get('/order', 'Pages::order');
+$routes->get('/order', 'Pages::orderPage');
+$routes->get('/product', 'Pages::productPage');
 
 /*
  * --------------------------------------------------------------------
