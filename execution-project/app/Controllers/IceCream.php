@@ -2,6 +2,7 @@
 
 namespace App\Controllers;
 use App\Models\PelangganModel;
+use App\Models\UserModel;
 
 class IceCream extends BaseController
 {
@@ -17,3 +18,4 @@ class IceCream extends BaseController
         return view('home');  
     }
 }
+

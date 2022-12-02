@@ -4,7 +4,12 @@ namespace App\Controllers;
 
 class Pages extends BaseController
 {
-    public function indexHome()
+    public function loginPage()
+    {
+        return view('login');
+    }
+
+    public function homePage()
     {
         return view('home');
     }

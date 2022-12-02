@@ -18,7 +18,7 @@ if (is_file(SYSTEMPATH . 'Config/Routes.php')) {
  */
 $routes->setDefaultNamespace('App\Controllers');
 $routes->setDefaultController('Pages');
-$routes->setDefaultMethod('indexHome');
+$routes->setDefaultMethod('loginPage');
 $routes->setTranslateURIDashes(false);
 $routes->set404Override();
 // The Auto Routing (Legacy) is very dangerous. It is easy to create vulnerable apps
@@ -35,7 +35,9 @@ $routes->set404Override();
 
 // We get a performance increase by specifying the default
 // route since we don't have to scan directories.
-$routes->get('/home', 'Pages::indexHome');
+$routes->get('/', 'Pages::loginPage');
+$routes->post('/', 'Auth::index');
+$routes->get('/home', 'Pages::homePage');
 $routes->post('/home', 'IceCream::createTransaction');
 $routes->get('/order', 'Pages::order');
 
