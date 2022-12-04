@@ -34,5 +34,19 @@ class IceCream extends BaseController
         return view('productEdit', $data);
     }
 
+    public function updateProduct()
+    {
+        $model = new IceCreamModel();
+        $id_iceCream = $this->request->getPost('id_iceCream');
+        $data = array(
+            'id_iceCream' => $this->request->getPost('id_iceCream'),
+            'nama_iceCream' => $this->request->getPost('nama_iceCream'),
+            'topping' => $this->request->getPost('topping'),
+            'tipe_harga' => $this->request->getPost('tipe_harga'),
+        );
+        $model->updateIceCream($data, $id_iceCream);
+        return redirect()->to('http://localhost:8080/product');
+    }
+
 }
 
