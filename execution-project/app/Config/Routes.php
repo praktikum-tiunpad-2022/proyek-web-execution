@@ -37,13 +37,18 @@ $routes->set404Override();
 // route since we don't have to scan directories.
 $routes->get('/', 'Pages::loginPage');
 $routes->post('/', 'Auth::index');
-$routes->get('/home', 'Pages::homePage');
-$routes->post('/home', 'IceCream::createTransaction');
-$routes->get('/order', 'Pages::orderPage');
-$routes->get('/product', 'Pages::productPage');
-$routes->get('/product', 'iceCream::displayProduct');
+
 $routes->get('/register', 'Pages::registerPage');
 $routes->post('/register', 'Auth::register');
+
+$routes->get('/home', 'Pages::homePage');
+$routes->post('/home', 'IceCream::createTransaction');
+
+$routes->get('/order', 'Pages::orderPage');
+
+$routes->get('/product', 'iceCream::displayProduct');
+$routes->get('/product/edit/(:num)', 'IceCream::editProduct/$1');
+
 
 /*
  * --------------------------------------------------------------------

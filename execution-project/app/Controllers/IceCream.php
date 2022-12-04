@@ -20,11 +20,18 @@ class IceCream extends BaseController
 
     public function displayProduct()
     {
-        $modelIceCream = new IceCreamModel();
+        $model = new IceCreamModel();
         $data = [
-            'iceCream' => $modelIceCream->getIceCream(),
+            'iceCream' => $model->getIceCream(),
         ];
-        return view('product',$data);
+        return view('product', $data);
+    }
+
+    public function editProduct($id_iceCream)
+    {
+        $model = new iceCreamModel();
+        $data['iceCream'] = $model->getIceCream($id_iceCream)->getRow();
+        return view('productEdit', $data);
     }
 
 }
