@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Oct 25, 2022 at 04:49 PM
+-- Generation Time: Dec 04, 2022 at 07:35 AM
 -- Server version: 10.4.25-MariaDB
 -- PHP Version: 8.1.10
 
@@ -61,9 +61,14 @@ CREATE TABLE `icecream` (
 INSERT INTO `icecream` (`id_iceCream`, `nama_iceCream`, `topping`, `tipe_harga`) VALUES
 (1, 'Chocolate', 'Oreo', 1),
 (2, 'Vanilla', 'Caramel', 1),
-(3, 'Strawberry', 'Cherry', 2),
-(4, 'Mocha', 'Almond', 3),
-(5, 'Green Tea', 'Chocochip', 3);
+(5, 'Chocochips Ice Cream', 'Kacang', 28000),
+(6, 'Snow Oreo Ice Cream', 'Oreo', 17000),
+(7, 'Choco-Mocca Ice Crea', 'Cokelat', 21000),
+(8, 'Sweet Corn Ice Cream', 'Kacang', 25000),
+(9, 'Sweet Vanilla Ice Cr', 'Kismis', 32000),
+(10, 'Biscuit Ice Cream', 'Cokelat', 18000),
+(11, 'Wealth Chocolate Ice', 'Cokelat', 27000),
+(12, 'Sweet Cutton Ice Cre', 'Susu', 15000);
 
 -- --------------------------------------------------------
 
@@ -87,7 +92,27 @@ INSERT INTO `pelanggan` (`id_pelanggan`, `nama_pelanggan`, `alamat`, `no_telp`) 
 (2, 'Budi', 'Jakarta', 18246098),
 (3, 'Candra', 'Padang', 134665270),
 (4, 'Dina', 'Semarang', 146864653),
-(5, 'Emil', 'Lampung', 130182291);
+(5, 'Emil', 'Lampung', 130182291),
+(6, 'Lim', 'Bandung', 112376324),
+(7, 'Vina', 'Surabaya', 2147483647),
+(8, 'Rika', 'Bandung', 231435643),
+(9, 'Aen', 'Lampung', 2147483647),
+(10, 'Kenneth', 'Surakarta', 2147483647),
+(11, 'Serena', 'Aceh', 493827267),
+(12, 'Serena', 'Aceh', 493827267),
+(13, 'Sisca', 'Bandung', 839462787),
+(14, 'Nicho', 'Yogyakarta', 2147483647),
+(15, 'Mika', 'Yogyakarta', 2147483647),
+(16, 'Villenn', 'Jakarta', 34456322),
+(17, 'Eilen', 'Sumatra Barat', 24243251),
+(18, 'Elsa', 'Bandung', 12433),
+(19, NULL, NULL, NULL),
+(20, 'qwe', 'sdad', 1222),
+(21, NULL, NULL, NULL),
+(22, NULL, NULL, NULL),
+(23, NULL, NULL, NULL),
+(24, NULL, NULL, NULL),
+(25, NULL, NULL, NULL);
 
 -- --------------------------------------------------------
 
@@ -109,6 +134,25 @@ INSERT INTO `transaksi` (`no_transaksi`, `id_pelanggan`, `id_iceCream`) VALUES
 (1, 1, 2),
 (2, 2, 3),
 (3, 3, 4);
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `users`
+--
+
+CREATE TABLE `users` (
+  `id` int(11) NOT NULL,
+  `email` varchar(50) NOT NULL,
+  `password` varchar(255) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dumping data for table `users`
+--
+
+INSERT INTO `users` (`id`, `email`, `password`) VALUES
+(2, 'diona12@gmail.com', 'diona12345');
 
 --
 -- Indexes for dumped tables
@@ -142,6 +186,12 @@ ALTER TABLE `transaksi`
   ADD KEY `id_iceCream` (`id_iceCream`);
 
 --
+-- Indexes for table `users`
+--
+ALTER TABLE `users`
+  ADD PRIMARY KEY (`id`);
+
+--
 -- AUTO_INCREMENT for dumped tables
 --
 
@@ -149,7 +199,19 @@ ALTER TABLE `transaksi`
 -- AUTO_INCREMENT for table `pelanggan`
 --
 ALTER TABLE `pelanggan`
-  MODIFY `id_pelanggan` int(3) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
+  MODIFY `id_pelanggan` int(3) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=26;
+
+--
+-- AUTO_INCREMENT for table `transaksi`
+--
+ALTER TABLE `transaksi`
+  MODIFY `no_transaksi` int(3) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+
+--
+-- AUTO_INCREMENT for table `users`
+--
+ALTER TABLE `users`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
