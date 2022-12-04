@@ -29,7 +29,7 @@ class IceCreamModel extends Model
         }
     }
 
-    public function saveIdentitas($data) {
+    public function saveIcecream($data) {
         return $this->insert($data);
     }
 

@@ -23,4 +23,9 @@ class Pages extends BaseController
     {
         return view('product');
     }
+
+    public function registerPage()
+    {
+        return view('register');
+    }
 }

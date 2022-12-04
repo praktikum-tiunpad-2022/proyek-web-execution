@@ -11,7 +11,7 @@
             </tr>
         </thead>
         <tbody>
-            <?php foreach($iceCream as $row) : ?>
+            <?php foreach ($iceCream as $row) : ?>
             <tr>
                 <td><?= $row['id_iceCream']; ?></td>
                 <td><?= $row['nama_iceCream']; ?></td>
@@ -21,4 +21,4 @@
             <?php endforeach; ?>
         </tbody>
     </table>
-<?= $this->endSection();?>
+<?= $this->endSection('content');?>

@@ -1,7 +1,7 @@
 <?php
 
 namespace App\Controllers;
-use App\Models\PelangganModel;
+// use App\Models\PelangganModel;
 use App\Models\IceCreamModel;
 
 class IceCream extends BaseController

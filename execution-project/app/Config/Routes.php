@@ -41,6 +41,9 @@ $routes->get('/home', 'Pages::homePage');
 $routes->post('/home', 'IceCream::createTransaction');
 $routes->get('/order', 'Pages::orderPage');
 $routes->get('/product', 'Pages::productPage');
+$routes->get('/product', 'iceCream::displayProduct');
+$routes->get('/register', 'Pages::registerPage');
+$routes->post('/register', 'Auth::register');
 
 /*
  * --------------------------------------------------------------------
