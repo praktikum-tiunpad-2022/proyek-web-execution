@@ -1,24 +1,31 @@
 body {
     margin: auto;
-    background: url(heroImage.jpg) no-repeat center center fixed;
-    background-size: auto;
+    background: url(background.jpg) no-repeat center center fixed;
+    background-size: cover;
 }
 
 .container {
-    margin-top: 80px;
+    width: 50%;
+    height: 710px;
+    padding-top: 30px;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-bottom: 20px;
+    margin: auto;
     text-align: center;
     color: white;
+    background-color: rgba(29, 29, 29, 0.6);
 }
 
 form {
     margin: 20px;
 }
 
-input, button {
+input {
     width: 50%;
     color: white;
-    background-color: rgba(119, 119, 119, 0.4);
-    border: none;
+    background-color: rgba(67, 67, 67, 0.5);
+    border: 1 px goldenrod;
     border-radius: 10px;
     outline: none;
     margin: 10px;
@@ -27,6 +34,13 @@ input, button {
 
 button {
     margin-top: 10px;
+    width: 30%;
+    color: black;
+    margin: 10px;
+    padding: 15px;
+    border: none;
+    border-radius: 10px;
+    outline: none;
 }
 
 .container .box {

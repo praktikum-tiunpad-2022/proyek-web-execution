@@ -5,6 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="loginStyle.css">
+    <meta name="description" content="Responsive Image Gallery">
+    <meta name="author" content="Tim Wells">
+  
     <title>Login Ice Cream Shop</title>
 </head>
 <body>
@@ -20,10 +23,10 @@
             <?php if(isset($validation)) : ?>
                 <?= $validation->listErrors() ?>
             <?php endif; ?>
-            <button name="Sign_In" value="Sign In" style="background-color: rgb(177, 138, 144);">Sign In</button>
+            <button type="submit">Login</button>
             <p>
-            Don't have an account yet? <a href="/register">Click here</a> to register
-        </p>
+                Don't have an account yet? <a href="/register">Click here</a> to register
+            </p>
         </form>
     </div>
 </body>

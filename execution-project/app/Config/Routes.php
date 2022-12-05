@@ -47,7 +47,11 @@ $routes->post('/home', 'IceCream::createTransaction');
 $routes->get('/order', 'Pages::orderPage');
 
 $routes->get('/product', 'iceCream::displayProduct');
+$routes->get('/product/add', 'iceCream::addProduct');
+$routes->post('/product/save', 'iceCream::saveProduct');
 $routes->get('/product/edit/(:num)', 'IceCream::editProduct/$1');
+$routes->post('/product/edit/(:num)', 'IceCream::updateProduct/$1');
+$routes->get('/product/delete/(:num)', 'IceCream::deleteProduct/$1');
 
 
 /*

@@ -13,6 +13,8 @@
       </thead>
       <tbody>
       <tbody>
+        <h1>Our Ice Cream Product</h1>
+        <a href="/product/add" class="btn btn-dark">Add data</a></td>
         <?php foreach($iceCream as $row) : ?>
         <tr>
             <td><?= $row['id_iceCream']; ?></td>

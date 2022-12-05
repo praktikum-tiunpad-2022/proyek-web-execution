@@ -8,7 +8,7 @@
     <title>Register</title>
 </head>
 <body>
-<div class="container">
+    <div class="container">
         <h1>Register</h1>
         <?php if(session()->get('success')) : ?>
             <p style="color: green; font-size: small;"><?= session()->get('success') ?></p>
@@ -16,7 +16,7 @@
         <form action="/register" method="post">
             <input type="text" name="email" placeholder="email"><br>
             <input type="text" name="password" placeholder="password"><br>
-            <input type="password" placeholder="password confirm" name="password_confirm" value="">
+            <input type="password" placeholder="password confirm" name="password_confirm" value=""><br>
             <?php if(isset($validation)) : ?>
                 <?= $validation->listErrors() ?>
             <?php endif; ?>

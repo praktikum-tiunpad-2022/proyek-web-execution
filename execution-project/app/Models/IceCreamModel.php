@@ -17,7 +17,7 @@ class IceCreamModel extends Model
         if($id_iceCream === false) {
             return $this->findAll();
         }else {
-            return $this->where(['id_iceCream' => $id_iceCream]);
+            return $this->where('id_iceCream', $id_iceCream)->first();
         }
     }
 
@@ -25,7 +25,7 @@ class IceCreamModel extends Model
         if($nama_iceCream === false) {
             return 0;
         } else {
-            return $this->where('nama_iceCream', $nama_iceCream)->first();
+            return $this->where('nama_iceCream', $nama_iceCream);
         }
     }
 
