@@ -8,7 +8,7 @@ use CodeIgniter\HTTP\Request;
 class IceCream extends BaseController
 {
     public function displayProduct()
-    {
+    {   
         $model = new IceCreamModel();
         $data = [
             'iceCream' => $model->getIceCream(),

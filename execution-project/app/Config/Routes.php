@@ -38,6 +38,8 @@ $routes->set404Override();
 $routes->get('/', 'Pages::loginPage');
 $routes->post('/', 'Auth::index');
 
+$routes->get('/logout', 'Auth::logout');
+
 $routes->get('/register', 'Pages::registerPage');
 $routes->post('/register', 'Auth::register');
 

@@ -9,6 +9,7 @@
           <th scope="col">Nama Pelanggan</th>
           <th scope="col">Alamat</th>
           <th scope="col">No Telpon</th>
+          <th scope="col">Email</th>
         </tr>
       </thead>
       <tbody>
@@ -21,6 +22,7 @@
             <td><?= $row['nama_pelanggan']; ?></td>
             <td><?= $row['alamat']; ?></td>
             <td><?= $row['no_telp']; ?></td>
+            <td><?= $row['email']; ?></td>
             <td><a href="/pelanggan/edit/<?= $row['id_pelanggan']; ?>" class="btn btn-dark">edit</a></td>
             <td><a href="/pelanggan/delete/<?= $row['id_pelanggan']; ?>" class="btn btn-dark">delete</a></td>
         </tr>

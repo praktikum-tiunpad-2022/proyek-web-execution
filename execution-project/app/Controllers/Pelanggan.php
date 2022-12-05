@@ -28,6 +28,7 @@ class Pelanggan extends BaseController
             'nama_pelanggan' => $this->request->getPost('nama_pelanggan'),
             'alamat' => $this->request->getPost('alamat'),
             'no_telp' => $this->request->getPost('no_telp'),
+            'email' => $this->request->getPost('email'),
         );
         $model->savePelanggan($data);
         return redirect()->to('http://localhost:8080/pelanggan');
@@ -49,6 +50,7 @@ class Pelanggan extends BaseController
             'nama_pelanggan' => $this->request->getPost('nama_pelanggan'),
             'alamat' => $this->request->getPost('alamat'),
             'no_telp' => $this->request->getPost('no_telp'),
+            'email' => $this->request->getPost('email'),
         ];
         $model->updatePelanggan($id_pelanggan, $data);
         return redirect()->to('http://localhost:8080/pelanggan');

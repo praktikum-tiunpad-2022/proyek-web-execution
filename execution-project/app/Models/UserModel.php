@@ -10,7 +10,7 @@ class UserModel extends Model
     protected $primaryKey       = 'id';
     protected $protectFields    = true;
     protected $allowedFields    = [
-        'email','password'
+        'email','password', 'level'
     ];
 
     protected $allowCallbacks = true;

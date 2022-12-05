@@ -3,7 +3,8 @@
 namespace App\Controllers;
 
 use App\Controllers\BaseController;
-use App\Models\UserModel as UserModel;
+use App\Models\UserModel;
+use App\Models\PelangganModel;
 
 class Auth extends BaseController
 {
@@ -40,6 +41,7 @@ class Auth extends BaseController
         $data = [
             'email' => $user['email'],
             'password' => $user['password'],
+            'level' => $user['level'],
             'isLoggedIn' => true,
         ];
         session()->set($data);
@@ -59,12 +61,23 @@ class Auth extends BaseController
                 $data['validation'] = $this->validator;
             }else {
                 $model = new UserModel();
+                $model2 = new PelangganModel();
 
                 $data = [
                     'email' => $this->request->getVar('email'),
                     'password' => $this->request->getVar('password'),
+                    'level' => $this->request->getVar('level')
                 ];
+
+                $data2 = [
+                    'nama_pelanggan' => $this->request->getVar('nama_pelanggan'),
+                    'alamat' => $this->request->getVar('alamat'),
+                    'no_telp' => $this->request->getVar('no_telp'),
+                    'email' => $this->request->getVar('email'),
+                ];
+
                 $model->save($data);
+                $model2->savePelanggan($data2);
                 session()->setFlashData('success','Register Success!');
                 return redirect()->to('http://localhost:8080/');
             }

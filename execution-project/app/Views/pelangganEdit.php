@@ -22,6 +22,10 @@
                     <label for="no_telp">No Telpon</label>
                     <input type="no_telp" class="form-control" name="no_telp" id="no_telp" value="<?= $pelanggan['no_telp'] ?>">
                 </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" class="form-control" name="email" id="email" value="<?= $pelanggan['email'] ?>">
+                </div>
                 <div class="button" style="margin-top: 20px;">
                     <button class="btn btn-dark" name="update_data">Update Data</button>
                 </div>

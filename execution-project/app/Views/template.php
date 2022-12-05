@@ -37,7 +37,7 @@
             <a class="nav-link" href="/pelanggan">Customer</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">About</a>
+            <a href="/logout" class="btn btn-dark" name="logout" id="nav-btn">Log Out</a>
           </li>
         </ul>
       </div>
