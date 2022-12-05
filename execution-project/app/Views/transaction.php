@@ -7,7 +7,11 @@
         <tr>
           <th scope="col">No Transaksi</th>
           <th scope="col">ID Pelanggan</th>
-          <th scope="col">ID Ice Cream</th>
+          <th scope="col">Nama Pelanggan</th>
+          <th scope="col">Alamat</th>
+          <th scope="col">No Telpon</th>
+          <th scope="col">Product Ice Cream</th>
+          <th scope="col">Harga</th>
         </tr>
       </thead>
       <tbody>
@@ -16,11 +20,15 @@
         <a href="/transaction/add" class="btn btn-dark">Add data</a></td>
         <?php foreach($transaction as $row) : ?>
         <tr>
-            <td><?= $row['no_transaksi']; ?></td>
-            <td><?= $row['id_pelanggan']; ?></td>
-            <td><?= $row['id_iceCream']; ?></td>
-            <td><a href="/transaction/edit/<?= $row['no_transaksi']; ?>" class="btn btn-dark">edit</a></td>
-            <td><a href="/transaction/delete/<?= $row['no_transaksi']; ?>" class="btn btn-dark">delete</a></td>
+            <td><?= $row->no_transaksi ?></td>
+            <td><?= $row->id_pelanggan ?></td>
+            <td><?= $row->nama_pelanggan ?></td>
+            <td><?= $row->alamat ?></td>
+            <td><?= $row->no_telp ?></td>
+            <td><?= $row->nama_iceCream ?></td>
+            <td><?= $row->harga?></td>
+            <td><a href="/transaction/edit/<?= $row->no_transaksi ?>" class="btn btn-dark">edit</a></td>
+            <td><a href="/transaction/delete/<?= $row->no_transaksi ?>" class="btn btn-dark">delete</a></td>
         </tr>
         <?php endforeach; ?>
       </tbody>

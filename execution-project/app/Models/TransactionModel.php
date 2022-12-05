@@ -14,8 +14,12 @@ class TransactionModel extends Model
     ];
 
     public function getTransaction($no_transaksi = false){
+        $builder = $this->db->table('transaksi');
+        $builder->join('pelanggan', 'transaksi.id_pelanggan = pelanggan.id_pelanggan');
+        $builder->join('iceCream', 'transaksi.id_iceCream = iceCream.id_iceCream')->join('harga', 'iceCream.tipe_harga = harga.tipe_harga');
+        $query = $builder->get();
         if($no_transaksi === false) {
-            return $this->findAll();
+            return $query->getResult();
         }else {
             return $this->where('no_transaksi', $no_transaksi)->first();
         }

@@ -14,8 +14,11 @@ class IceCreamModel extends Model
     ];
 
     public function getIceCream($id_iceCream = false){
+        $builder = $this->db->table('iceCream');
+        $builder->join('harga', 'harga.tipe_harga = iceCream.tipe_harga');
+        $query = $builder->get();
         if($id_iceCream === false) {
-            return $this->findAll();
+            return $query->getResult();
         }else {
             return $this->where('id_iceCream', $id_iceCream)->first();
         }
