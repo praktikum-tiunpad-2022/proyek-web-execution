@@ -31,6 +31,12 @@
             <a class="nav-link" href="/order">Order</a>
           </li>
           <li class="nav-item">
+            <a class="nav-link" href="/transaction">Transaction</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/pelanggan">Customer</a>
+          </li>
+          <li class="nav-item">
             <a class="nav-link" href="#">About</a>
           </li>
         </ul>

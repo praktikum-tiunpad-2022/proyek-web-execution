@@ -5,7 +5,7 @@
     <div class="row">
         <div class="col">
             <h1>Order Form</h1>
-            <form action="/home" method="POST">
+            <form action="/order" method="post">
                 <div class="form-group">
                     <label for="name">Nama Pelanggan</label>
                     <input type="nama_pelanggan" class="form-control" name="nama_pelanggan" id="nama_pelanggan" placeholder="Nama Pelanggan">

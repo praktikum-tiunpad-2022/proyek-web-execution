@@ -42,17 +42,30 @@ $routes->get('/register', 'Pages::registerPage');
 $routes->post('/register', 'Auth::register');
 
 $routes->get('/home', 'Pages::homePage');
-$routes->post('/home', 'IceCream::createTransaction');
 
 $routes->get('/order', 'Pages::orderPage');
+$routes->post('/order', 'Order::createTransaction');
 
-$routes->get('/product', 'iceCream::displayProduct');
-$routes->get('/product/add', 'iceCream::addProduct');
-$routes->post('/product/save', 'iceCream::saveProduct');
+$routes->get('/product', 'IceCream::displayProduct');
+$routes->get('/product/add', 'IceCream::addProduct');
+$routes->post('/product/save', 'IceCream::saveProduct');
 $routes->get('/product/edit/(:num)', 'IceCream::editProduct/$1');
 $routes->post('/product/edit/(:num)', 'IceCream::updateProduct/$1');
 $routes->get('/product/delete/(:num)', 'IceCream::deleteProduct/$1');
 
+$routes->get('/transaction', 'Transaction::displayTransaction');
+$routes->get('/transaction/add', 'Transaction::addTransaction');
+$routes->post('/transaction/save', 'Transaction::saveTransaction');
+$routes->get('/transaction/edit/(:num)', 'Transaction::editTransaction/$1');
+$routes->post('/transaction/edit/(:num)', 'Transaction::updateTransaction/$1');
+$routes->get('/transaction/delete/(:num)', 'Transaction::deleteTransaction/$1');
+
+$routes->get('/pelanggan', 'Pelanggan::displayPelanggan');
+$routes->get('/pelanggan/add', 'Pelanggan::addPelanggan');
+$routes->post('/pelanggan/save', 'Pelanggan::savePelanggan');
+$routes->get('/pelanggan/edit/(:num)', 'Pelanggan::editPelanggan/$1');
+$routes->post('/pelanggan/edit/(:num)', 'Pelanggan::updatePelanggan/$1');
+$routes->get('/pelanggan/delete/(:num)', 'Pelanggan::deletePelanggan/$1');
 
 /*
  * --------------------------------------------------------------------

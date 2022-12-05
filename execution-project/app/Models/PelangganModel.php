@@ -14,7 +14,7 @@ class PelangganModel extends Model
     ];
 
     public function getPelanggan($id_pelanggan = false){
-        if($id === false) {
+        if($id_pelanggan === false) {
             return $this->findAll();
         }else {
             return $this->where('id_pelanggan',$id_pelanggan)->first();
