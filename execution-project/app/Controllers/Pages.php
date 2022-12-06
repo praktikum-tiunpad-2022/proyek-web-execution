@@ -17,7 +17,7 @@ class Pages extends BaseController
 
     public function orderPage()
     {
-        return view('order');
+        return redirect()->to('http://localhost:8080/home');
     }
 
     public function productPage()

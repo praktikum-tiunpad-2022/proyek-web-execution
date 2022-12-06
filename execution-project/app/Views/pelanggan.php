@@ -18,13 +18,13 @@
         <a href="/pelanggan/add" class="btn btn-dark">Add data</a></td>
         <?php foreach($pelanggan as $row) : ?>
         <tr>
-            <td><?= $row['id_pelanggan']; ?></td>
-            <td><?= $row['nama_pelanggan']; ?></td>
-            <td><?= $row['alamat']; ?></td>
-            <td><?= $row['no_telp']; ?></td>
-            <td><?= $row['email']; ?></td>
-            <td><a href="/pelanggan/edit/<?= $row['id_pelanggan']; ?>" class="btn btn-dark">edit</a></td>
-            <td><a href="/pelanggan/delete/<?= $row['id_pelanggan']; ?>" class="btn btn-dark">delete</a></td>
+            <td><?= $row->id_pelanggan ?></td>
+            <td><?= $row->nama_pelanggan ?></td>
+            <td><?= $row->alamat ?></td>
+            <td><?= $row->no_telp ?></td>
+            <td><?= $row->email ?></td>
+            <td><a href="/pelanggan/edit/<?= $row->id_pelanggan ?>" class="btn btn-dark">edit</a></td>
+            <td><a href="/pelanggan/delete/<?= $row->id_pelanggan ?>" class="btn btn-dark">delete</a></td>
         </tr>
         <?php endforeach; ?>
       </tbody>

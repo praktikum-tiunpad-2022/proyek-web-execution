@@ -14,10 +14,21 @@ class PelangganModel extends Model
     ];
 
     public function getPelanggan($id_pelanggan = false){
+        $builder = $this->db->table('pelanggan');
+        $builder->join('users', 'users.email = pelanggan.email');
+        $query = $builder->get();
         if($id_pelanggan === false) {
-            return $this->findAll();
+            return $query->getResult();
         }else {
             return $this->where('id_pelanggan',$id_pelanggan)->first();
+        }
+    }
+
+    public function getPelangganByEmail($email = false){
+        if ($email === false) {
+            return $this->findAll();
+        } else {
+            return $this->where('email',$email)->first();
         }
     }
 

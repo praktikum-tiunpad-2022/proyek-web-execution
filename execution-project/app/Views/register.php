@@ -14,7 +14,7 @@
             <p style="color: green; font-size: small;"><?= session()->get('success') ?></p>
         <?php endif; ?>
         <form action="/register" method="post">
-            <input type="text" name="level" placeholder="level" value="1"><br>
+            <input type="text" name="level" placeholder="level" value="1" readonly hidden><br>
             <input type="text" name="nama_pelanggan" placeholder="nama"><br>
             <input type="text" name="alamat" placeholder="alamat"><br>
             <input type="text" name="no_telp" placeholder="no telpon"><br>

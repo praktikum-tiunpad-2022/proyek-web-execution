@@ -20,7 +20,7 @@ class IceCreamModel extends Model
         if($id_iceCream === false) {
             return $query->getResult();
         }else {
-            return $this->where('id_iceCream', $id_iceCream)->first();
+            return $this->join('harga', 'harga.tipe_harga = iceCream.tipe_harga')->where('id_iceCream', $id_iceCream)->first();
         }
     }
 
