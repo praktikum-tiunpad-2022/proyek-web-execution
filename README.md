@@ -6,7 +6,8 @@
 
 ## Deskripsi
 
-Website penjualan Ice Cream secara online
+Website yang kami buat adalah sebuah toko online penjualan es krim dengan nama brand “Milk It”. Aplikasi ini dibangun berdasarkan latar belakang yakni es krim sekarang menjadi makanan yang cukup populer semenjak keluarnya brand es krim ternama yakni “Mixue”, namun yang kami temukan adalah masyarakat pecinta es krim terutama anak-anak terkadang harus mengantri lama untuk membeli es krim pada toko tersebut. Oleh sebab itu website kami, “Milk It” hadir untuk menjawab persoalan tersebut, dimana kami menyediakan pre order es krim yang diinginkan secara online dan bisa diakses kapanpun dimanapun.
+
 
 
 ## Anggota Tim
@@ -16,14 +17,16 @@ Website penjualan Ice Cream secara online
 | 140810210008  | Nabila Sa'diyyah Ahmadi          |
 
 ## Fungsi
-- Sebagai penyedia layanan berbelanja Ice Cream yang mudah, yakmi cukup dengan klik dari website
-- Sebagai penyedia layanan distribusi penjualan ice cream secara online
+- Mempermudah masyarakat dalam pembelian es krim karena semua menu es krim dapat dilihat di website
+- Mengurangi antrian pada toko es krim
+- Mempercepat proses pembelian karena sudah pre order terlebih dahulu
+- Pembayaran lebih aman dan data langsung terdata
 
 ## Tujuan
-- Mempermudah masyarakat dalam membeli ice cream dari mana saja dan kapan saja
+- Sebagai proyek praktikum mata kuliah pemrograman web
 
 ## Target Tujuan
-Masyarakat dari berbagai kalangan usia, terutama untuk anak-anak dan remaja yang menyukai Ice Cream
+Implementasi website mulai dari login awal hingga pemilihan product dan sampai pada tahap transaksi
 
 ## Mockup Dasar Sederhana
 ![mockup1](https://github.com/praktikum-tiunpad-2022/proyek-web-execution/blob/03cec263108026955b5f765405e01c0a3184c045/1.png)
