@@ -23,4 +23,16 @@ class UserModel extends Model
         }
         return $data;
     }
+
+    public function getUserByEmail($email = false){
+        if ($email === false) {
+            return $this->findAll();
+        } else {
+            return $this->where('email',$email)->first();
+        }
+    }
+
+    public function updateUser($id, $data) {
+        return $this->update($id, $data);
+    }
 }

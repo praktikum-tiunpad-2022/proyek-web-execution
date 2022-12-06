@@ -17,7 +17,9 @@
       <tbody>
       <tbody>
         <h1>Transaction</h1>
-        <a href="/transaction/add" class="btn btn-dark">Add data</a></td>
+        <?php if (session()->get('level') === '2') : ?>
+          <a href="/transaction/add" class="btn btn-dark">Add data</a></td>
+        <?php endif ?>  
         <?php foreach($transaction as $row) : ?>
         <tr>
             <td><?= $row->no_transaksi ?></td>
@@ -27,8 +29,10 @@
             <td><?= $row->no_telp ?></td>
             <td><?= $row->nama_iceCream ?></td>
             <td><?= $row->harga?></td>
-            <td><a href="/transaction/edit/<?= $row->no_transaksi ?>" class="btn btn-dark">edit</a></td>
-            <td><a href="/transaction/delete/<?= $row->no_transaksi ?>" class="btn btn-dark">delete</a></td>
+            <?php if (session()->get('level') === '2') : ?>
+              <td><a href="/transaction/edit/<?= $row->no_transaksi ?>" class="btn btn-dark">edit</a></td>
+              <td><a href="/transaction/delete/<?= $row->no_transaksi ?>" class="btn btn-dark">delete</a></td>
+            <?php endif ?>
         </tr>
         <?php endforeach; ?>
       </tbody>

@@ -69,6 +69,7 @@ $routes->post('/pelanggan/save', 'Pelanggan::savePelanggan');
 $routes->get('/pelanggan/edit/(:num)', 'Pelanggan::editPelanggan/$1');
 $routes->post('/pelanggan/edit/(:num)', 'Pelanggan::updatePelanggan/$1');
 $routes->get('/pelanggan/delete/(:num)', 'Pelanggan::deletePelanggan/$1');
+$routes->get('/pelanggan/admin/(:any)', 'Pelanggan::transformToAdmin/$1');
 
 /*
  * --------------------------------------------------------------------

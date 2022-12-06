@@ -12,10 +12,21 @@ class Transaction extends BaseController
     public function displayTransaction()
     {
         $model = new TransactionModel();
-        $data = [
-            'transaction' => $model->getTransaction(),
-        ];
-        return view('transaction', $data);
+        if (session()->get('level') === '2') {
+            $data = [
+                'transaction' => $model->getTransaction(),
+            ];
+            return view('transaction', $data);
+        } else {
+            $model2 = new PelangganModel();
+            $email = session()->get('email');
+            $dataPelanggan = $model2->getPelangganByEmail($email);
+            $id_pelanggan = $dataPelanggan['id_pelanggan'];
+            $data = [
+                'transaction' => $model->getTransactionByPelanggan($id_pelanggan),
+            ];
+            return view('transaction', $data);
+        }
     }
 
     public function addTransaction()

@@ -25,6 +25,15 @@ class TransactionModel extends Model
         }
     }
 
+    public function getTransactionByPelanggan($id_pelanggan = false) {
+        $builder = $this->db->table('transaksi');
+        $builder->join('pelanggan', 'transaksi.id_pelanggan = pelanggan.id_pelanggan');
+        $builder->join('iceCream', 'transaksi.id_iceCream = iceCream.id_iceCream')->join('harga', 'iceCream.tipe_harga = harga.tipe_harga');
+        $builder->where('transaksi.id_pelanggan', $id_pelanggan);
+        $query = $builder->get();
+        return $query->getResult();
+    }
+
     public function saveTransaction($data) {
         return $this->insert($data);
     }

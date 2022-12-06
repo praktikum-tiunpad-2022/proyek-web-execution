@@ -2,6 +2,7 @@
 
 namespace App\Controllers;
 use App\Models\PelangganModel;
+use App\Models\UserModel;
 
 use CodeIgniter\HTTP\Request;
 
@@ -10,10 +11,18 @@ class Pelanggan extends BaseController
     public function displayPelanggan()
     {
         $model = new PelangganModel();
-        $data = [
-            'pelanggan' => $model->getPelanggan(),
-        ];
-        return view('pelanggan', $data);
+        if (session()->get('level') === '2') {
+            $data = [
+                'pelanggan' => $model->getPelanggan(),
+            ];
+            return view('pelanggan', $data);
+        } else {
+            $email = session()->get('email');
+            $data = [
+                'pelanggan' => $model->getPelangganByEmail($email),
+            ];
+            return view('pelanggan', $data);
+        }
     }
 
     public function addPelanggan()
@@ -60,6 +69,16 @@ class Pelanggan extends BaseController
     {
         $model = new PelangganModel();
         $model->deletePelanggan($id_pelanggan);
+        return redirect()->to('http://localhost:8080/pelanggan');
+    }
+
+    public function transformToAdmin($email)
+    {
+        $model = new UserModel();
+        $dataUser = $model->getUserByEmail($email);
+        $id = $dataUser['id'];
+        $data['level'] = '2';
+        $model->updateUser($id, $data);
         return redirect()->to('http://localhost:8080/pelanggan');
     }
 }
