@@ -10,6 +10,16 @@ class Pages extends BaseController
         return view('login');
     }
 
+    public function aboutPage()
+    {
+        return view('about');
+    }
+
+    public function contactPage()
+    {
+        return view('contact');
+    }
+
     public function homePage()
     {
         return view('home');

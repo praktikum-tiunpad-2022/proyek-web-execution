@@ -10,6 +10,15 @@
 <body>
     <div class="container">
         <div class="login">
+            <div class="navbar">
+                <div class="menu">
+                    <ul>
+                        <li><a href="/">Login</a></li>
+                        <li><a href="/about">About</a></li>
+                        <li><a href="/contact">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
             <h1>Register</h1>
             <?php if(session()->get('success')) : ?>
                 <p style="color: green; font-size: small;"><?= session()->get('success') ?></p>

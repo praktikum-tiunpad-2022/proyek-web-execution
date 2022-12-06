@@ -8,7 +8,7 @@
     <meta name="description" content="Responsive Image Gallery">
     <meta name="author" content="Tim Wells">
   
-    <title>Login Ice Cream Shop</title>
+    <title>About Ice Cream Shop</title>
 </head>
 <body>
 
@@ -23,24 +23,14 @@
                     </ul>
                 </div>
             </div>
-            <form action="/" method="post">
-                <h1>Login Milk It Ice Cream Shop</h1>
-                <?php if(session()->get('success')) : ?>
-                    <p style="color: green; font-size: small;"><?= session()->get('success') ?></p>
-                <?php endif; ?>
+            <form action="/">
+                <h1>About Milk It Ice Cream Shop</h1>
                 <hr>
-                <p>Have an Account?</p>
-                <label for="">Email</label>
-                <input type="text" name="email" placeholder="email" required>
-                <label for="">Password</label>
-                <input type="text" name="password" placeholder="password" required><br>
-                <?php if(isset($validation)) : ?>
-                    <?= $validation->listErrors() ?>
-                <?php endif; ?>
-                <button>Login</button>
                 <p>
-                    Don't have an account yet? <a href="/register">Click here</a> to register
+                    Milk It adalah sebuah toko penjualan ice Ice Cream secara online dimana pelanggan
+                    dapat membeli es krim dengan pemesanan terlebih dahulu.
                 </p>
+                <button>Login</button>
             </form>
         </div>
         <div class="right">
