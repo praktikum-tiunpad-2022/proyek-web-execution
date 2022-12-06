@@ -9,26 +9,31 @@
 </head>
 <body>
     <div class="container">
-        <h1>Register</h1>
-        <?php if(session()->get('success')) : ?>
-            <p style="color: green; font-size: small;"><?= session()->get('success') ?></p>
-        <?php endif; ?>
-        <form action="/register" method="post">
-            <input type="text" name="level" placeholder="level" value="1" readonly hidden><br>
-            <input type="text" name="nama_pelanggan" placeholder="nama"><br>
-            <input type="text" name="alamat" placeholder="alamat"><br>
-            <input type="text" name="no_telp" placeholder="no telpon"><br>
-            <input type="text" name="email" placeholder="email"><br>
-            <input type="text" name="password" placeholder="password"><br>
-            <input type="password" placeholder="password confirm" name="password_confirm" value=""><br>
-            <?php if(isset($validation)) : ?>
-                <?= $validation->listErrors() ?>
+        <div class="login">
+            <h1>Register</h1>
+            <?php if(session()->get('success')) : ?>
+                <p style="color: green; font-size: small;"><?= session()->get('success') ?></p>
             <?php endif; ?>
-            <button type="submit">Register</button>
-            <p>
-                Already have an acoount? <a href="/">Click here</a> to login
-            </p>
-        </form>
+            <form action="/register" method="post">
+                <input type="text" name="level" placeholder="level" value="1" readonly hidden><br>
+                <input type="text" name="nama_pelanggan" placeholder="nama"><br>
+                <input type="text" name="alamat" placeholder="alamat"><br>
+                <input type="text" name="no_telp" placeholder="no telpon"><br>
+                <input type="text" name="email" placeholder="email"><br>
+                <input type="text" name="password" placeholder="password"><br>
+                <input type="password" placeholder="password confirm" name="password_confirm" value=""><br>
+                <?php if(isset($validation)) : ?>
+                    <?= $validation->listErrors() ?>
+                <?php endif; ?>
+                <button type="submit">Register</button>
+                <p>
+                    Already have an acoount? <a href="/">Click here</a> to login
+                </p>
+            </form>
+        </div>
+            <div class="right">
+                <img src="pic/2.jpg" alt="">
+            </div>
     </div>
 </body>
 </html>

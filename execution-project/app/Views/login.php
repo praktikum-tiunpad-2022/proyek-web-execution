@@ -11,23 +11,32 @@
     <title>Login Ice Cream Shop</title>
 </head>
 <body>
+
     <div class="container">
-        <h1>Login</h1>
-        <?php if(session()->get('success')) : ?>
-            <p style="color: green; font-size: small;"><?= session()->get('success') ?></p>
-        <?php endif; ?>
-        <h3>Have an account?</h3>
-        <form action="/" method="post">
-            <input type="text" name="email" placeholder="email" required><br>
-            <input type="text" name="password" placeholder="password" required><br>
-            <?php if(isset($validation)) : ?>
-                <?= $validation->listErrors() ?>
-            <?php endif; ?>
-            <button type="submit">Login</button>
-            <p>
-                Don't have an account yet? <a href="/register">Click here</a> to register
-            </p>
-        </form>
+        <div class="login">
+            <form action="/" method="post">
+                <h1>Login Milk It Ice Cream Shop</h1>
+                <?php if(session()->get('success')) : ?>
+                    <p style="color: green; font-size: small;"><?= session()->get('success') ?></p>
+                <?php endif; ?>
+                <hr>
+                <p>Have an Account?</p>
+                <label for="">Email</label>
+                <input type="text" name="email" placeholder="email" required>
+                <label for="">Password</label>
+                <input type="text" name="password" placeholder="password" required><br>
+                <?php if(isset($validation)) : ?>
+                    <?= $validation->listErrors() ?>
+                <?php endif; ?>
+                <button>Login</button>
+                <p>
+                    Don't have an account yet? <a href="/register">Click here</a> to register
+                </p>
+            </form>
+        </div>
+        <div class="right">
+            <img src="pic/1.jpg" alt="">
+        </div>
     </div>
 </body>
 </html>

@@ -49,4 +49,4 @@
     </div>
 </div>
 
-<?= $this->endSection();?>
+<?= $this->endSection('content');?>
