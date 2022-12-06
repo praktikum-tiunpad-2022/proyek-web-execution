@@ -35,8 +35,8 @@ Implementasi website mulai dari login awal hingga pemilihan product dan sampai p
 
 ## Skema Database
 * Tabel Relasi Database
-![tabel](https://github.com/praktikum-tiunpad-2022/proyek-web-execution/blob/6d4cf1d95edbada65dc383c9db0f1131a6532176/IceCream2.png)
+![tabel](ERD/IceCream2.png)
 
 * Entity Relationship Diagram 
-![diagram](https://github.com/praktikum-tiunpad-2022/proyek-web-execution/blob/57893b267461cbcc9169ecb0e724c4b95779b58f/IceCream.png)
+![diagram](ERD/IceCream.png)
 
